@@ -1,20 +1,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 $mainBackground: hsl(233, 47%, 7%);
 $cardBackground: hsl(244, 38%, 16%);
 $accent: hsl(277, 64%, 61%);
 $white: hsl(0, 0%, 100%);
-$mainparagraph:  hsla(0, 0%, 100%, 0.75);
+$mainparagraph: hsla(0, 0%, 100%, 0.75);
 $statHeadings: hsla(0, 0%, 100%, 0.6);
 
-body{
-    background-color: $mainBackground;
-    font-size: 0.9rem;
-    color: white;
+body {
+  background-color: $mainBackground;
+  font-size: 0.9rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10vh;
+
+  .card {
+    background-color: $cardBackground;
+    border: 0 solid $cardBackground;
+    border-radius: 5px;
+    .image {
+      position: relative;
+      .header-img {
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+      }
+      .img-cover {
+        position: absolute;
+        top: 0;
+        background-color: $accent;
+        width: 100%;
+        height: calc(100% - 6px);
+        opacity: 0.7;
+        border-radius: 5px 5px 0 0;
+      }
+    }
+    .header {
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 0 0.7rem;
+      line-height: 1.5;
+      color: $white;
+
+      span {
+        color: $accent;
+        font-size: 1.5rem;
+      }
+    }
+
+    .info {
+      color: $mainparagraph;
+      text-align: center;
+      padding-left: 1.25rem;
+      padding-right: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .stats{
+        text-align: center;
+        padding: 1.5rem 0;
+    }
+    
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
