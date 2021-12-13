@@ -69,30 +69,28 @@ body {
       line-height: 1.5;
     }
 
-    .stats{
-        text-align: center;
-        padding: 1.5rem 0;
+    .stats {
+      text-align: center;
+      padding: 1.5rem 0;
 
-        .stat{
-            color: $white;
-            font-size: 1.5rem;
-            font-weight: 700;
-            padding: 0;
-        }
+      .stat {
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 0;
+      }
 
-        span{
-            padding: 0;
-            display: block;
-            text-transform: uppercase;
-            color: $statHeadings;
+      span {
+        padding: 0;
+        display: block;
+        text-transform: uppercase;
+        color: $statHeadings;
+      }
 
-        }
-
-        div{
-            padding-bottom: 1.5rem;
-        }
+      div {
+        padding-bottom: 1.5rem;
+      }
     }
-    
   }
 }
 .attribution {
