@@ -50,7 +50,7 @@ body {
   font-size: 1.1rem;
   font-weight: 700;
   text-align: center;
-  padding: 0 0.7rem;
+  padding: 0 0.9rem;
   line-height: 1.5;
   color: white;
 }
@@ -73,9 +73,28 @@ body {
   padding: 1.5rem 0;
 }
 
+.container .card .stats .stat {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0;
+}
+
+.container .card .stats span {
+  padding: 0;
+  display: block;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.container .card .stats div {
+  padding-bottom: 1.5rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 1rem;
 }
 
 .attribution a {
