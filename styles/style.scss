@@ -101,3 +101,33 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (min-width: 700px) {
+  .container{
+    max-width: 700px;
+  margin: 0 auto;
+  margin-top: 20vh;
+  .card {
+    height: 300px;
+    display: flex;
+
+    .image{
+      order: 2;
+
+      .header-img{
+        border-radius: 0 5px 5px 0;
+        width: 350px;
+
+      }
+      .img-cover {
+        height: 100%;
+        border-radius: 0 5px 5px 0;
+      }
+    }
+    .body{
+      order: 1;
+    }
+  }
+  }
+  
+}

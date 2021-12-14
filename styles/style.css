@@ -100,4 +100,36 @@ body {
 .attribution a {
   color: #3e52a3;
 }
+
+@media (min-width: 700px) {
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 20vh;
+  }
+  .container .card {
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .card .image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .container .card .image .header-img {
+    border-radius: 0 5px 5px 0;
+    width: 350px;
+  }
+  .container .card .image .img-cover {
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+  }
+  .container .card .body {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
 /*# sourceMappingURL=style.css.map */
